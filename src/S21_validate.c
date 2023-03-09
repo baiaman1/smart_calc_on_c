@@ -38,6 +38,8 @@ int main() {
   printf("true2: %d\n", validate("2345.6785-45.5"));
   printf("true3: %d\n", validate("(2.3+(6*1))-9.4"));
   printf("true4: %d\n", validate("cos(3-5)-(sin(56))"));
+  printf("true5: %d\n", validate("5+5*2"));
+  printf("true6: %d\n", validate("sin(-2)*5+10%2"));
   return 0;
 }
 
