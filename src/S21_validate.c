@@ -1,67 +1,78 @@
 #include "./s21_smart_calc.h"
 
 int main() {
-  //   printf("1: %d\n", validate(")66.5"));
-  //   printf("2: %d\n", validate(".5"));
-  //   printf("3: %d\n", validate("*66.5"));
-  //   printf("4: %d\n", validate("/66.5"));
-  //   printf("5: %d\n", validate("%66.5"));
-  //   printf("6: %d\n", validate("^66.5"));
+  printf("\n");
+  printf("1: %d\n", validate(")66.5"));
+  printf("2: %d\n", validate(".5"));
+  printf("3: %d\n", validate("*66.5"));
+  printf("4: %d\n", validate("/66.5"));
+  printf("5: %d\n", validate("%66.5"));
+  printf("6: %d\n", validate("^66.5"));
 
-  //   printf("7: %d\n", validate("66.5.7"));
-  //   printf("7.1: %d\n", validate("4..7"));
-  //   printf("8: %d\n", validate("7+/5"));
+  printf("7.1: %d\n", validate("66.5.7"));
+  printf("7.2: %d\n", validate("4..7"));
+  printf("7.3: %d\n", validate("45.5.+2.45"));
+  printf("8: %d\n", validate("7+/5"));
 
-  //   printf("9.1: %d\n", validate("(*")); // (*
-  //   printf("9.2: %d\n", validate("(/"));
-  //   printf("9.3: %d\n", validate("(%"));
-  //   printf("9.4: %d\n", validate("(."));
-  //   printf("9.5: %d\n", validate("(^"));
+  printf("9.1: %d\n", validate("(*")); // (*
+  printf("9.2: %d\n", validate("(/"));
+  printf("9.3: %d\n", validate("(%"));
+  printf("9.4: %d\n", validate("(."));
+  printf("9.5: %d\n", validate("(^"));
 
-  //   printf("10.1: %d\n", validate("(5*)")); // *)
-  //   printf("10.2: %d\n", validate("(5/)"));
-  //   printf("10.3: %d\n", validate("(5%)"));
-  //   printf("10.4: %d\n", validate("(5.)"));
-  //   printf("10.5: %d\n", validate("(5^)"));
+  printf("10.1: %d\n", validate("(5*)")); // *)
+  printf("10.2: %d\n", validate("(5/)"));
+  printf("10.3: %d\n", validate("(5%)"));
+  printf("10.4: %d\n", validate("(5.)"));
+  printf("10.5: %d\n", validate("(5^)"));
 
-  //   printf("11.1: %d\n", validate("45.5+2.45"));
-  //   printf("11.2: %d\n", validate("5("));
+  printf("11.1: %d\n", validate("8.("));
+  printf("11.2: %d\n", validate("5("));
 
-  //   printf("true: %d\n", validate("5+6.8"));
-  //   printf("true2: %d\n", validate("2345.6785-45.5"));
-  //   printf("true3: %d\n", validate("(2.3+(6*1))-9.4"));
+  printf("12.1: %d\n", validate("cos("));
+  printf("12.2: %d\n", validate("cos(3-5"));
+  printf("13: %d\n", validate("9cos(3-5)"));
+  printf("14: %d\n", validate("cos()"));
+
+  printf("\ntrue1: %d\n", validate("cos(54)+6.8"));
+  printf("true2: %d\n", validate("2345.6785-45.5"));
+  printf("true3: %d\n", validate("(2.3+(6*1))-9.4"));
+  printf("true4: %d\n", validate("cos(3-5)-(sin(56))"));
   return 0;
 }
 
 int validate(char *str) {
   int res = 0;
   state_t state = {0};
-
   if (str) {
-    int i = 0;
-    for (; str[i] != '\0'; i++) {
-      if (!val_1st(str[0])) { // Если 1й элемент не равен: ).*/%^
-        if (str[i] == '(') {
-          if (i != 0) {
+    for (int i = 0; str[i] != '\0'; i++) {
 
-            // что перед скобкой (
+      // check 1st element: ).*/%^
+      if (!val_1st(str[0])) {
+
+        // open bracket
+        if (str[i] == '(') {
+          state.brecket++;
+          if (i != 0) {
+            // before (
             if (str[i - 1] == '.' || isdigit(str[i - 1])) {
               res = 11;
               break;
             }
           }
-          // что после скобки (
+          // after (
           if (val_1st(str[i + 1])) {
             res = 9;
             break;
           }
         }
 
+        // closing bracket
         if (str[i] == ')') {
-
-          // перед скобкой только число
+          state.brecket++;
+          // before ) only num or )
           if (isdigit(str[i - 1]) || str[i - 1] == ')') {
-            if (i == 0) { // если первый элемент )
+            if (i == 0) { // 1st elem = )
               res = 1;
               break;
             }
@@ -71,19 +82,10 @@ int validate(char *str) {
           }
         }
 
-        // if (str[i] == '.') {
-        //   if (!isdigit(str[i - 1]) || !isdigit(str[i + 1])) {
-        //     res = 71;
-        //     break;
-        //   }
-        //   int j = i;
-        //   while (isdigit(str[j])) {
-        //   }
-        // }
-
+        // nums 0-9
         if (isdigit(str[i])) {
-          printf("point: %c\n", str[i]);
           int j = i;
+          // check repeating dots
           while (isdigit(str[j]) || str[j] == '.') {
             if (str[j] == '.') {
               state.point++;
@@ -94,29 +96,40 @@ int validate(char *str) {
             }
             j++;
           }
-          i = j;
           if (res) {
+            res = 77;
+            break;
+          }
+          state.point = 0;
+        }
+
+        // check operators
+        if (is_oper(str[i])) {
+          if (is_oper(str[i - 1]) || is_oper(str[i + 1]) ||
+              val_1st(str[i - 1] || val_1st(str[i + 1]))) {
+            res = 8;
             break;
           }
         }
 
-        // for (int j = i; isdigit(str[j]), str[j] == '.'; j++) {
-        //   if (str[j] == '.') {
-        //     state.point++;
-        //     if (state.point > 1) {
-        //       res = 7;
-        //       break;
-        //     }
-        //   }
-        //   //   printf("point: %d\n", state.point);
-        // }
+        // functions
+        if (is_func(str[i]) && i != 0) {
+          if (!is_oper(str[i - 1]) && str[i - 1] != '(' && str[i + 1] != '(' &&
+              str[i - 1] != 'a') {
+            res = 14;
+            break;
+          }
+        }
 
-      } else {
+      } else { // 1st false
         res = 2;
         break;
       }
+    } // for
+    if (state.brecket > 0 && state.brecket % 2 != 0) {
+      res = 12;
     }
-  }
+  } // str != NULL
   return res;
 }
 
@@ -195,17 +208,3 @@ int val_1st(char sim) {
 
   return res;
 }
-
-// if (isdigit(str[i])) { // number
-//   state.is_num = 1;
-//   state.point = 0;
-// }
-// if (str[i] == '.') {
-//   if (state.is_num && val_1st(str[i + 1]) && val_1st(str[i - 1])) {
-//     state.point++;
-//     state.is_num = 0;
-//   } else {
-//     res = 7;
-//     break;
-//   }
-// }
