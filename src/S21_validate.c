@@ -1,47 +1,47 @@
 #include "./s21_smart_calc.h"
 
-int main() {
-  printf("\n");
-  printf("1: %d\n", validate(")66.5"));
-  printf("2: %d\n", validate(".5"));
-  printf("3: %d\n", validate("*66.5"));
-  printf("4: %d\n", validate("/66.5"));
-  printf("5: %d\n", validate("%66.5"));
-  printf("6: %d\n", validate("^66.5"));
+// int main() {
+//   printf("\n");
+//   printf("1: %d\n", validate(")66.5"));
+//   printf("2: %d\n", validate(".5"));
+//   printf("3: %d\n", validate("*66.5"));
+//   printf("4: %d\n", validate("/66.5"));
+//   printf("5: %d\n", validate("%66.5"));
+//   printf("6: %d\n", validate("^66.5"));
 
-  printf("7.1: %d\n", validate("66.5.7"));
-  printf("7.2: %d\n", validate("4..7"));
-  printf("7.3: %d\n", validate("45.5.+2.45"));
-  printf("8: %d\n", validate("7+/5"));
+//   printf("7.1: %d\n", validate("66.5.7"));
+//   printf("7.2: %d\n", validate("4..7"));
+//   printf("7.3: %d\n", validate("45.5.+2.45"));
+//   printf("8: %d\n", validate("7+/5"));
 
-  printf("9.1: %d\n", validate("(*")); // (*
-  printf("9.2: %d\n", validate("(/"));
-  printf("9.3: %d\n", validate("(%"));
-  printf("9.4: %d\n", validate("(."));
-  printf("9.5: %d\n", validate("(^"));
+//   printf("9.1: %d\n", validate("(*")); // (*
+//   printf("9.2: %d\n", validate("(/"));
+//   printf("9.3: %d\n", validate("(%"));
+//   printf("9.4: %d\n", validate("(."));
+//   printf("9.5: %d\n", validate("(^"));
 
-  printf("10.1: %d\n", validate("(5*)")); // *)
-  printf("10.2: %d\n", validate("(5/)"));
-  printf("10.3: %d\n", validate("(5%)"));
-  printf("10.4: %d\n", validate("(5.)"));
-  printf("10.5: %d\n", validate("(5^)"));
+//   printf("10.1: %d\n", validate("(5*)")); // *)
+//   printf("10.2: %d\n", validate("(5/)"));
+//   printf("10.3: %d\n", validate("(5%)"));
+//   printf("10.4: %d\n", validate("(5.)"));
+//   printf("10.5: %d\n", validate("(5^)"));
 
-  printf("11.1: %d\n", validate("8.("));
-  printf("11.2: %d\n", validate("5("));
+//   printf("11.1: %d\n", validate("8.("));
+//   printf("11.2: %d\n", validate("5("));
 
-  printf("12.1: %d\n", validate("cos("));
-  printf("12.2: %d\n", validate("cos(3-5"));
-  printf("13: %d\n", validate("9cos(3-5)"));
-  printf("14: %d\n", validate("cos()"));
+//   printf("12.1: %d\n", validate("cos("));
+//   printf("12.2: %d\n", validate("cos(3-5"));
+//   printf("13: %d\n", validate("9cos(3-5)"));
+//   printf("14: %d\n", validate("cos()"));
 
-  printf("\ntrue1: %d\n", validate("cos(54)+6.8"));
-  printf("true2: %d\n", validate("2345.6785-45.5"));
-  printf("true3: %d\n", validate("(2.3+(6*1))-9.4"));
-  printf("true4: %d\n", validate("cos(3-5)-(sin(56))"));
-  printf("true5: %d\n", validate("5+5*2"));
-  printf("true6: %d\n", validate("sin(-2)*5+10%2"));
-  return 0;
-}
+//   printf("\ntrue1: %d\n", validate("cos(54)+6.8"));
+//   printf("true2: %d\n", validate("2345.6785-45.5"));
+//   printf("true3: %d\n", validate("(2.3+(6*1))-9.4"));
+//   printf("true4: %d\n", validate("cos(3-5)-(sin(56))"));
+//   printf("true5: %d\n", validate("5+5*2"));
+//   printf("true6: %d\n", validate("sin(-2)*5+10%2"));
+//   return 0;
+// }
 
 int validate(char *str) {
   int res = 0;
@@ -132,7 +132,8 @@ int validate(char *str) {
       res = 12;
     }
   } // str != NULL
-  return res;
+
+  return (res);
 }
 
 int is_func(char sim) {

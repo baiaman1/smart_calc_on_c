@@ -280,6 +280,7 @@ CMakeFiles/QT.dir/mainwindow.cpp.o: \
   /usr/local/include/QtGui/qkeysequence.h \
   /usr/local/include/QtWidgets/qtabwidget.h \
   /usr/local/include/QtGui/qicon.h \
+  /Users/fenixnec/Desktop/smart_calc_on_c/src/QT/../s21_smart_calc.h \
   /Users/fenixnec/Desktop/smart_calc_on_c/src/build-QT-Desktop_x86_darwin_generic_mach_o_64bit-Debug/QT_autogen/include/./ui_mainwindow.h \
   /usr/local/include/QtCore/QVariant \
   /usr/local/lib/QtCore.framework/Headers/qvariant.h \

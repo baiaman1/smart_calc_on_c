@@ -280,6 +280,7 @@ CMakeFiles/QT.dir/main.cpp.o: \
   /usr/local/include/QtGui/qkeysequence.h \
   /usr/local/include/QtWidgets/qtabwidget.h \
   /usr/local/include/QtGui/qicon.h \
+  /Users/fenixnec/Desktop/smart_calc_on_c/src/QT/../s21_smart_calc.h \
   /usr/local/lib/QtWidgets.framework/Headers/QApplication \
   /usr/local/lib/QtWidgets.framework/Headers/qapplication.h \
   /usr/local/include/QtCore/qcoreapplication.h \

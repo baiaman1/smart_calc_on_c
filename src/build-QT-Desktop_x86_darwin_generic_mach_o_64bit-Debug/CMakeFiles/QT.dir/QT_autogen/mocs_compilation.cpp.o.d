@@ -280,4 +280,5 @@ CMakeFiles/QT.dir/QT_autogen/mocs_compilation.cpp.o: \
   /usr/local/include/QtGui/qcursor.h /usr/local/include/QtGui/qbitmap.h \
   /usr/local/include/QtGui/qkeysequence.h \
   /usr/local/include/QtWidgets/qtabwidget.h \
-  /usr/local/include/QtGui/qicon.h
+  /usr/local/include/QtGui/qicon.h \
+  /Users/fenixnec/Desktop/smart_calc_on_c/src/QT/../s21_smart_calc.h

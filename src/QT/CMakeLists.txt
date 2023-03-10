@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.5)
 
-project(QT VERSION 0.1 LANGUAGES CXX)
+project(QT VERSION 0.1 LANGUAGES CXX C)
 
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
@@ -19,6 +19,8 @@ set(PROJECT_SOURCES
         mainwindow.cpp
         mainwindow.h
         mainwindow.ui
+        ../s21_smart_calc.h
+       ../s21_smart_calc.c
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)

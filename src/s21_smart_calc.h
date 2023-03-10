@@ -15,7 +15,9 @@ typedef struct {
   int oprtator;
 } state_t;
 
+void calculate(char *str);
 int validate(char *str);
+
 int val_1st(char sim);
 int is_func(char sim);
 int is_oper(char sim);

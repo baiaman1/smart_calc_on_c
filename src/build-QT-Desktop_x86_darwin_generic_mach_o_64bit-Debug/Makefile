@@ -166,6 +166,30 @@ QT_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/QT.dir/build.make CMakeFiles/QT.dir/QT_autogen/mocs_compilation.cpp.s
 .PHONY : QT_autogen/mocs_compilation.cpp.s
 
+Users/fenixnec/Desktop/smart_calc_on_c/src/s21_smart_calc.o: Users/fenixnec/Desktop/smart_calc_on_c/src/s21_smart_calc.c.o
+.PHONY : Users/fenixnec/Desktop/smart_calc_on_c/src/s21_smart_calc.o
+
+# target to build an object file
+Users/fenixnec/Desktop/smart_calc_on_c/src/s21_smart_calc.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/QT.dir/build.make CMakeFiles/QT.dir/Users/fenixnec/Desktop/smart_calc_on_c/src/s21_smart_calc.c.o
+.PHONY : Users/fenixnec/Desktop/smart_calc_on_c/src/s21_smart_calc.c.o
+
+Users/fenixnec/Desktop/smart_calc_on_c/src/s21_smart_calc.i: Users/fenixnec/Desktop/smart_calc_on_c/src/s21_smart_calc.c.i
+.PHONY : Users/fenixnec/Desktop/smart_calc_on_c/src/s21_smart_calc.i
+
+# target to preprocess a source file
+Users/fenixnec/Desktop/smart_calc_on_c/src/s21_smart_calc.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/QT.dir/build.make CMakeFiles/QT.dir/Users/fenixnec/Desktop/smart_calc_on_c/src/s21_smart_calc.c.i
+.PHONY : Users/fenixnec/Desktop/smart_calc_on_c/src/s21_smart_calc.c.i
+
+Users/fenixnec/Desktop/smart_calc_on_c/src/s21_smart_calc.s: Users/fenixnec/Desktop/smart_calc_on_c/src/s21_smart_calc.c.s
+.PHONY : Users/fenixnec/Desktop/smart_calc_on_c/src/s21_smart_calc.s
+
+# target to generate assembly for a file
+Users/fenixnec/Desktop/smart_calc_on_c/src/s21_smart_calc.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/QT.dir/build.make CMakeFiles/QT.dir/Users/fenixnec/Desktop/smart_calc_on_c/src/s21_smart_calc.c.s
+.PHONY : Users/fenixnec/Desktop/smart_calc_on_c/src/s21_smart_calc.c.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -227,6 +251,9 @@ help:
 	@echo "... QT_autogen/mocs_compilation.o"
 	@echo "... QT_autogen/mocs_compilation.i"
 	@echo "... QT_autogen/mocs_compilation.s"
+	@echo "... Users/fenixnec/Desktop/smart_calc_on_c/src/s21_smart_calc.o"
+	@echo "... Users/fenixnec/Desktop/smart_calc_on_c/src/s21_smart_calc.i"
+	@echo "... Users/fenixnec/Desktop/smart_calc_on_c/src/s21_smart_calc.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
