@@ -6,6 +6,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/QT.dir/QT_autogen/mocs_compilation.cpp.o.d"
   "CMakeFiles/QT.dir/Users/fenixnec/Desktop/smart_calc_on_c/src/s21_smart_calc.c.o"
   "CMakeFiles/QT.dir/Users/fenixnec/Desktop/smart_calc_on_c/src/s21_smart_calc.c.o.d"
+  "CMakeFiles/QT.dir/Users/fenixnec/Desktop/smart_calc_on_c/src/s21_validate.c.o"
+  "CMakeFiles/QT.dir/Users/fenixnec/Desktop/smart_calc_on_c/src/s21_validate.c.o.d"
   "CMakeFiles/QT.dir/main.cpp.o"
   "CMakeFiles/QT.dir/main.cpp.o.d"
   "CMakeFiles/QT.dir/mainwindow.cpp.o"

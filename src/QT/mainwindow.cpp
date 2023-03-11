@@ -26,6 +26,15 @@ MainWindow::MainWindow(QWidget *parent)
     connect(ui->del,SIGNAL(clicked()), this, SLOT(dig_num()));
     connect(ui->bracket_open,SIGNAL(clicked()), this, SLOT(dig_num()));
     connect(ui->bracket_close,SIGNAL(clicked()), this, SLOT(dig_num()));
+    connect(ui->pushButton_sin,SIGNAL(clicked()), this, SLOT(dig_num()));
+    connect(ui->pushButton_cos,SIGNAL(clicked()), this, SLOT(dig_num()));
+    connect(ui->pushButton_tan,SIGNAL(clicked()), this, SLOT(dig_num()));
+    connect(ui->pushButton_asin,SIGNAL(clicked()), this, SLOT(dig_num()));
+    connect(ui->pushButton_acos,SIGNAL(clicked()), this, SLOT(dig_num()));
+    connect(ui->pushButton_atan,SIGNAL(clicked()), this, SLOT(dig_num()));
+    connect(ui->pushButton_ln,SIGNAL(clicked()), this, SLOT(dig_num()));
+    connect(ui->pushButton_log,SIGNAL(clicked()), this, SLOT(dig_num()));
+    connect(ui->pushButton_sqrt,SIGNAL(clicked()), this, SLOT(dig_num()));
 }
 
 MainWindow::~MainWindow()
@@ -37,12 +46,34 @@ void MainWindow::dig_num()
 {
     QPushButton *button = (QPushButton*)sender();
     QString new_label = (ui->res_label->text() + button->text());
-    if (ui->res_label->text().contains("sin()")) {
-        new_label = "sin(";
-    } else {
+    if (button->text() == "sin()") {
+        new_label = (ui->res_label->text() + "sin(");
+    } else if (button->text() == "cos()") {
+        new_label = (ui->res_label->text() + "cos(");
+    } else if (button->text() == "tan()") {
+        new_label = (ui->res_label->text() + "tan(");
+    } else if (button->text() == "asin()") {
+        new_label = (ui->res_label->text() + "asin(");
+    } else if (button->text() == "acos()") {
+        new_label = (ui->res_label->text() + "acos(");
+    } else if (button->text() == "atan()") {
+        new_label = (ui->res_label->text() + "atan(");
+    } else if (button->text() == "log()") {
+        new_label = (ui->res_label->text() + "log(");
+    } else if (button->text() == "ln()") {
+        new_label = (ui->res_label->text() + "ln(");
+    } else if (button->text() == "sqrt()") {
+        new_label = (ui->res_label->text() + "sqrt(");
+    } else if (button->text() == "×") {
+        new_label = (ui->res_label->text() + "*");
+    }
     ui->res_label->setText(new_label);
 
-    }
+
+
+
+
+
 }
 
 
@@ -78,7 +109,6 @@ void MainWindow::on_eq_clicked()
 
     calculate(cstr);
 
-
     std::string res_str(cstr);
     QString label = QString::fromStdString(res_str);
 
@@ -107,3 +137,9 @@ void MainWindow::on_pushButton_clear_clicked()
 //    }
 
 //}
+
+//void MainWindow::on_pushButton_sin_clicked()
+//{
+//    ui->res_label->setText(ui->res_label->text() = "sin(");
+//}
+

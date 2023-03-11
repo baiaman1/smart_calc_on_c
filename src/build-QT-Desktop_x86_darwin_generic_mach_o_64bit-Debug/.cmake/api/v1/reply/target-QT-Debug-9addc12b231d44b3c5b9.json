@@ -44,7 +44,7 @@
 			{
 				"command" : 3,
 				"file" : 1,
-				"line" : 27,
+				"line" : 28,
 				"parent" : 0
 			},
 			{
@@ -68,7 +68,7 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 49,
+				"line" : 50,
 				"parent" : 0
 			},
 			{
@@ -378,7 +378,8 @@
 			"language" : "C",
 			"sourceIndexes" : 
 			[
-				6
+				6,
+				7
 			]
 		}
 	],
@@ -481,7 +482,8 @@
 				0,
 				1,
 				2,
-				6
+				6,
+				7
 			]
 		},
 		{
@@ -490,7 +492,7 @@
 			[
 				3,
 				5,
-				7
+				8
 			]
 		},
 		{
@@ -541,6 +543,12 @@
 			"backtrace" : 4,
 			"compileGroupIndex" : 1,
 			"path" : "/Users/fenixnec/Desktop/smart_calc_on_c/src/s21_smart_calc.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 1,
+			"path" : "/Users/fenixnec/Desktop/smart_calc_on_c/src/s21_validate.c",
 			"sourceGroupIndex" : 0
 		},
 		{

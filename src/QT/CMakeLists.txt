@@ -21,6 +21,7 @@ set(PROJECT_SOURCES
         mainwindow.ui
         ../s21_smart_calc.h
        ../s21_smart_calc.c
+       ../s21_validate.c
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)

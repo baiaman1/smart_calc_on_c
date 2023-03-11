@@ -680,7 +680,7 @@ QPushButton:pressed {
 }</string>
     </property>
     <property name="text">
-     <string>sqrt</string>
+     <string>sqrt()</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_atan">

@@ -27,6 +27,10 @@
 			"path" : "/Users/fenixnec/Desktop/smart_calc_on_c/src/build-QT-Desktop_x86_darwin_generic_mach_o_64bit-Debug/CMakeFiles/3.23.0/CMakeCXXCompiler.cmake"
 		},
 		{
+			"isGenerated" : true,
+			"path" : "/Users/fenixnec/Desktop/smart_calc_on_c/src/build-QT-Desktop_x86_darwin_generic_mach_o_64bit-Debug/CMakeFiles/3.23.0/CMakeCCompiler.cmake"
+		},
+		{
 			"isCMake" : true,
 			"isExternal" : true,
 			"path" : "/Applications/CMake.app/Contents/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake"
@@ -95,6 +99,46 @@
 			"isCMake" : true,
 			"isExternal" : true,
 			"path" : "/Applications/CMake.app/Contents/share/cmake-3.23/Modules/Platform/Apple-Clang-CXX.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/Applications/CMake.app/Contents/share/cmake-3.23/Modules/Platform/Apple-Clang.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/Applications/CMake.app/Contents/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/Applications/CMake.app/Contents/share/cmake-3.23/Modules/CMakeCInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/Applications/CMake.app/Contents/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/Applications/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/AppleClang-C.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/Applications/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/Clang.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/Applications/CMake.app/Contents/share/cmake-3.23/Modules/Platform/Apple-AppleClang-C.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/Applications/CMake.app/Contents/share/cmake-3.23/Modules/Platform/Apple-Clang-C.cmake"
 		},
 		{
 			"isCMake" : true,
@@ -223,12 +267,17 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/Applications/CMake.app/Contents/share/cmake-3.23/Modules/CheckIncludeFileCXX.cmake"
+			"path" : "/Applications/CMake.app/Contents/share/cmake-3.23/Modules/CheckIncludeFile.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/Applications/CMake.app/Contents/share/cmake-3.23/Modules/CheckCXXSourceCompiles.cmake"
+			"path" : "/Applications/CMake.app/Contents/share/cmake-3.23/Modules/CheckCSourceCompiles.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/Applications/CMake.app/Contents/share/cmake-3.23/Modules/Internal/CheckSourceCompiles.cmake"
 		},
 		{
 			"isCMake" : true,
@@ -327,12 +376,12 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/Applications/CMake.app/Contents/share/cmake-3.23/Modules/CheckIncludeFileCXX.cmake"
+			"path" : "/Applications/CMake.app/Contents/share/cmake-3.23/Modules/CheckIncludeFile.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/Applications/CMake.app/Contents/share/cmake-3.23/Modules/CheckCXXSourceCompiles.cmake"
+			"path" : "/Applications/CMake.app/Contents/share/cmake-3.23/Modules/CheckCSourceCompiles.cmake"
 		},
 		{
 			"isCMake" : true,
@@ -452,12 +501,12 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/Applications/CMake.app/Contents/share/cmake-3.23/Modules/CheckIncludeFileCXX.cmake"
+			"path" : "/Applications/CMake.app/Contents/share/cmake-3.23/Modules/CheckIncludeFile.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/Applications/CMake.app/Contents/share/cmake-3.23/Modules/CheckCXXSourceCompiles.cmake"
+			"path" : "/Applications/CMake.app/Contents/share/cmake-3.23/Modules/CheckCSourceCompiles.cmake"
 		},
 		{
 			"isCMake" : true,
@@ -688,12 +737,12 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/Applications/CMake.app/Contents/share/cmake-3.23/Modules/CheckIncludeFileCXX.cmake"
+			"path" : "/Applications/CMake.app/Contents/share/cmake-3.23/Modules/CheckIncludeFile.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/Applications/CMake.app/Contents/share/cmake-3.23/Modules/CheckCXXSourceCompiles.cmake"
+			"path" : "/Applications/CMake.app/Contents/share/cmake-3.23/Modules/CheckCSourceCompiles.cmake"
 		},
 		{
 			"isCMake" : true,
@@ -894,12 +943,12 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/Applications/CMake.app/Contents/share/cmake-3.23/Modules/CheckIncludeFileCXX.cmake"
+			"path" : "/Applications/CMake.app/Contents/share/cmake-3.23/Modules/CheckIncludeFile.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/Applications/CMake.app/Contents/share/cmake-3.23/Modules/CheckCXXSourceCompiles.cmake"
+			"path" : "/Applications/CMake.app/Contents/share/cmake-3.23/Modules/CheckCSourceCompiles.cmake"
 		},
 		{
 			"isCMake" : true,
@@ -1081,12 +1130,12 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/Applications/CMake.app/Contents/share/cmake-3.23/Modules/CheckIncludeFileCXX.cmake"
+			"path" : "/Applications/CMake.app/Contents/share/cmake-3.23/Modules/CheckIncludeFile.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/Applications/CMake.app/Contents/share/cmake-3.23/Modules/CheckCXXSourceCompiles.cmake"
+			"path" : "/Applications/CMake.app/Contents/share/cmake-3.23/Modules/CheckCSourceCompiles.cmake"
 		},
 		{
 			"isCMake" : true,

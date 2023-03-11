@@ -527,7 +527,7 @@ public:
         pushButton_X->setText(QCoreApplication::translate("MainWindow", "(x)", nullptr));
         pushButton_ln->setText(QCoreApplication::translate("MainWindow", "ln()", nullptr));
         pushButton_log->setText(QCoreApplication::translate("MainWindow", "log()", nullptr));
-        pushButton_sqrt->setText(QCoreApplication::translate("MainWindow", "sqrt", nullptr));
+        pushButton_sqrt->setText(QCoreApplication::translate("MainWindow", "sqrt()", nullptr));
         pushButton_atan->setText(QCoreApplication::translate("MainWindow", "atan()", nullptr));
         pushButton_asin->setText(QCoreApplication::translate("MainWindow", "asin()", nullptr));
         pushButton_cos->setText(QCoreApplication::translate("MainWindow", "cos()", nullptr));

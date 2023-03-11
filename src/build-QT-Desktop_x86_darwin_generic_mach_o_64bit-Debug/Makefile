@@ -190,6 +190,30 @@ Users/fenixnec/Desktop/smart_calc_on_c/src/s21_smart_calc.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/QT.dir/build.make CMakeFiles/QT.dir/Users/fenixnec/Desktop/smart_calc_on_c/src/s21_smart_calc.c.s
 .PHONY : Users/fenixnec/Desktop/smart_calc_on_c/src/s21_smart_calc.c.s
 
+Users/fenixnec/Desktop/smart_calc_on_c/src/s21_validate.o: Users/fenixnec/Desktop/smart_calc_on_c/src/s21_validate.c.o
+.PHONY : Users/fenixnec/Desktop/smart_calc_on_c/src/s21_validate.o
+
+# target to build an object file
+Users/fenixnec/Desktop/smart_calc_on_c/src/s21_validate.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/QT.dir/build.make CMakeFiles/QT.dir/Users/fenixnec/Desktop/smart_calc_on_c/src/s21_validate.c.o
+.PHONY : Users/fenixnec/Desktop/smart_calc_on_c/src/s21_validate.c.o
+
+Users/fenixnec/Desktop/smart_calc_on_c/src/s21_validate.i: Users/fenixnec/Desktop/smart_calc_on_c/src/s21_validate.c.i
+.PHONY : Users/fenixnec/Desktop/smart_calc_on_c/src/s21_validate.i
+
+# target to preprocess a source file
+Users/fenixnec/Desktop/smart_calc_on_c/src/s21_validate.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/QT.dir/build.make CMakeFiles/QT.dir/Users/fenixnec/Desktop/smart_calc_on_c/src/s21_validate.c.i
+.PHONY : Users/fenixnec/Desktop/smart_calc_on_c/src/s21_validate.c.i
+
+Users/fenixnec/Desktop/smart_calc_on_c/src/s21_validate.s: Users/fenixnec/Desktop/smart_calc_on_c/src/s21_validate.c.s
+.PHONY : Users/fenixnec/Desktop/smart_calc_on_c/src/s21_validate.s
+
+# target to generate assembly for a file
+Users/fenixnec/Desktop/smart_calc_on_c/src/s21_validate.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/QT.dir/build.make CMakeFiles/QT.dir/Users/fenixnec/Desktop/smart_calc_on_c/src/s21_validate.c.s
+.PHONY : Users/fenixnec/Desktop/smart_calc_on_c/src/s21_validate.c.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -254,6 +278,9 @@ help:
 	@echo "... Users/fenixnec/Desktop/smart_calc_on_c/src/s21_smart_calc.o"
 	@echo "... Users/fenixnec/Desktop/smart_calc_on_c/src/s21_smart_calc.i"
 	@echo "... Users/fenixnec/Desktop/smart_calc_on_c/src/s21_smart_calc.s"
+	@echo "... Users/fenixnec/Desktop/smart_calc_on_c/src/s21_validate.o"
+	@echo "... Users/fenixnec/Desktop/smart_calc_on_c/src/s21_validate.i"
+	@echo "... Users/fenixnec/Desktop/smart_calc_on_c/src/s21_validate.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

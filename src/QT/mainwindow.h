@@ -32,5 +32,6 @@ private slots:
 //    void math_operations();
     void on_pow_clicked();
     void on_pushButton_clear_clicked();
+//    void on_pushButton_sin_clicked();
 };
 #endif // MAINWINDOW_H

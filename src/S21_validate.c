@@ -133,7 +133,7 @@ int validate(char *str) {
     }
   } // str != NULL
 
-  return (res);
+  return res;
 }
 
 int is_func(char sim) {
@@ -211,3 +211,12 @@ int val_1st(char sim) {
 
   return res;
 }
+
+// void input_func(char *str) {
+//   res =
+//   for (int i = 0; str[i] != '\0'; i++) {
+//     if (str[i] == 'c' && str[i - 1] != 'a') {
+
+//     }
+//   }
+// }
